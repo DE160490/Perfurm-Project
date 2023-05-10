@@ -1,0 +1,3 @@
++ Tạo cơ sở dữ liệu chứa cookie.
++ Khi login thành công sẽ lấy dữ liệu cookie gắn cho username hoặc userid và addCookie cho name="cart" value="giá trị đọc được từ cơ sở dữ liệu".
++ Khi logout sẽ xóa Cookie đi.
