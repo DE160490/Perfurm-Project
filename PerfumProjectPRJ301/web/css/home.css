@@ -1,0 +1,368 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*---------------------------------------*/
+
+
+/* --------------header ---------------------- */
+
+#header {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.login{
+    display: flex;
+}
+#login , #start, #logout{
+   background-color: black;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+
+}
+#login a{
+    color: white;
+}
+#start{
+    background-color: rgb(234, 220, 220);
+}
+#start a{
+    color: black;
+}
+#start:hover{
+    background-color: rgb(130, 72, 72);
+}
+#start a:hover{
+    text-decoration: none;
+    color: white;
+}
+#login a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+#login:hover{
+    background-color: rgb(204, 134, 134);
+}
+
+.search-input{
+    background-color: rgb(196, 189, 189);
+    outline: none;
+    border: 1px solid rgb(196, 189, 189) ;
+    border-radius: 5px;
+    position: relative;
+}
+div .icon{
+    position: absolute;
+    cursor: pointer;
+    margin-left: 170px;
+    margin-top: -26px;
+    display: block;
+}
+
+
+
+/* --------------menu------------------------- */
+.hd2{
+    background-color: rgb(255, 255, 255);
+}
+
+.header .hd2-menu {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header .hd2-menu ul li a:hover{
+    color: rgb(51, 131, 180);
+}
+.header .hd2-menu a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.header .hd2-menu ul {
+    display: flex;
+    margin: 0;
+}
+.header .hd2-menu li{
+    position: relative;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.header .hd2-menu li:hover .sub-menu{
+    display: block;
+    transition: 400ms ease;
+}
+
+.header .hd2-menu  .sub-menu{
+    display: none;
+    border: 1px solid rgb(206, 183, 183);
+    background-color: rgb(247, 245, 245);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    width: 300px;
+    box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.19);
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 15px;
+}
+
+
+/* Menu hiện thị giỏ hàng */
+.header .hd2-cart  .sub-menu2{
+    display: none;
+    border: 1px solid rgb(206, 183, 183);
+    background-color: rgb(247, 245, 245);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1 ;
+    width: 320px;
+    box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.19);
+    transition: 400ms ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 15px;
+}
+
+.header .hd2-cart ul:nth-child(1):hover{
+    color: rgb(51, 131, 180);
+}
+
+.header .hd2-cart li:hover .sub-menu2{
+    display: block;
+    transition: 400ms ease;
+    z-index: 1;
+}
+
+.hd2-cart li{
+    padding-right: 0px !important ;
+}
+
+.sub-menu2 .view-cart a{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.sub-menu2 .menu22{
+    display: flex;
+    flex-direction: row;
+    padding: 10px; 
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* ------------body---------------------- */
+
+.slide{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.body2{
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+    align-items: center;
+}
+.body2 .body2_child1 a{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.body2 .body2_child1{
+    background-color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: auto;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.body2 .body2_child1:hover{
+    box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.19);
+}
+/*---------- Show list product ---------------- */
+.body3{
+    background-color: rgb(225, 225, 225);
+    
+}
+.body3 h2{
+    margin: 0 auto;
+    padding: 50px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    font-size: x-large ;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.list_product1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+.list_product1 .product{
+    position: relative;
+    border-radius: 5px;
+}
+.list_product1 .product a{
+    color: grey;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+}
+
+
+.list_product1 .product .xemnhanh{
+    font-size: 15px;
+    position: absolute;
+    top: 40%;
+    left: 34%;
+    color: white;
+    background-color: black;
+    display: none;
+    text-decoration: none;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.list_product1 .product:hover .xemnhanh{
+    display: block;
+    border-radius: 4px;
+    opacity: 0.6;
+}
+.list_product1 .product:hover{
+    filter:brightness(0.8) ;
+}
+.price-box{
+    font-family: serif, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+/* --------------Footer---------------- */
+
+footer{
+    background-color: black;
+    
+}
+footer h5{
+    color: white;
+    margin-left: 60px;
+}
+footer p{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer h5{
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    outline: none;
+}
+footer ul li{
+    margin-left: 60px;
+    color: white;
+}
+footer ul h6{
+    color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+.list-unstyled a{
+    color: gray;
+    padding-bottom: 10px;
+}
+.list-unstyled a:hover{
+    text-decoration: none;  
+    color: bisque;
+}
+.footer-child1 a i{
+    font-size: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.text-center h3{
+    color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.text-center .pay-icon {
+    padding: 5px;
+    color:rgb(249, 248, 248);
+    background-color: black;
+}
+.text-center .pay-icon{
+    padding: 10px;
+    
+}
+.text-center a:hover{
+    text-decoration: none;
+}
+.footer-copyright a{
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer-copyright a:hover{
+    text-decoration: none;
+    color: gray;
+}
+
+
